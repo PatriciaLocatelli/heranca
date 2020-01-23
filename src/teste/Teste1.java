@@ -45,5 +45,16 @@ public class Teste1 {
         Conta conta9 = new ContaEmpresarial(1009, "Bob", 1000.0, 500.0);
         conta9.saque(200.0);
         System.out.println(conta9.getSaldo());
+
+        /*
+        Polimorfismo
+         */
+        Conta contax = new Conta(1010, "Alex", 100.0);
+        Conta contay = new ContaPoupanca(1011, "Amélia", 100.0, 1.0);
+
+        contax.saque(50.00);
+        contay.saque(50.0);
+        System.out.println(contax.getSaldo());
+        System.out.println(contay.getSaldo());
     }
 }
