@@ -33,5 +33,17 @@ public class Teste1 {
             conta6.atualizarSaldo();
             System.out.println("Atualizado");
         }
+
+        Conta conta7 = new Conta(1007, "João", 1000.0);
+        conta7.saque(200.0);
+        System.out.println(conta7.getSaldo());
+
+        Conta conta8 = new ContaPoupanca(1008, "Maria", 1000.0, 0.01);
+        conta8.saque(200.0);
+        System.out.println(conta8.getSaldo());
+
+        Conta conta9 = new ContaEmpresarial(1009, "Bob", 1000.0, 500.0);
+        conta9.saque(200.0);
+        System.out.println(conta9.getSaldo());
     }
 }
