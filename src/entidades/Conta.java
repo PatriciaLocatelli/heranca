@@ -14,7 +14,7 @@ public class Conta {
         this.titular = titular;
         this.saldo = saldo;
     }
-    
+
     public Integer getNumero() {
         return numero;
     }
